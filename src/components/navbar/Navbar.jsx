@@ -1,25 +1,8 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { Menu, NavbarSing } from './navbarComponents';
 import logo from '../../assets/logo.svg';
 import './navbar.css';
-
-const Menu = () => (
-    <>
-        <p><a href='#home'>Home</a></p>
-        <p><a href='#wgpt3'>What is GPT?</a></p>
-        <p><a href='#possibility'>Open AI</a></p>
-        <p><a href='#features'>Case Studies</a></p>
-        <p><a href='#blog'>Library</a></p>
-    </>
-)
-
-const NavbarSing = () => (
-    <>
-        <hr />
-        <p>Sing in</p>
-        <button type='button'>Sing up</button>
-    </>
-)
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -50,6 +33,7 @@ const Navbar = () => {
                 {toggleMenu && (
                     <div className='gpt3__navbar-menu-container scale-up-center '>
                         <div className='gpt3__navbar-menu-container-links'>
+                            
                             <Menu />
 
                             <div className='gpt3__navbar-menu-container-links-sing'>
