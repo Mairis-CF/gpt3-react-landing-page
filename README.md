@@ -29,7 +29,4 @@ Hope you like it!
 
 
 
----
-
-
 ###### tags: ReactJS ReactProject Javascript CSS3 HTML5 Frontend student UX/UI Modern site
